@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: raboleypipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: raboleypipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: raboleypipelinesjavascriptdocker 
+          image: rabenvcr.azurecr.io/raboleypipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
