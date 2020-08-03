@@ -17,6 +17,7 @@ az aks create \
     --name myapp \
     --node-count 1 \
     --enable-addons monitoring \
-    --generate-ssh-keys
+    --generate-ssh-keys \
+    --kubernetes-version 1.16.10
 
 ```

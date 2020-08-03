@@ -4,6 +4,9 @@ metadata:
   name: raboleypipelinesjavascriptdocker 
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: raboleypipelinesjavascriptdocker 
   template:
     metadata:
       labels:
